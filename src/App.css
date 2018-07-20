@@ -1,0 +1,17 @@
+.article-preview {
+  background-color: #e3f2fd;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,.24), 0 3px 12px 0 rgba(0,0,0,.12);
+  height: 35vh;
+  margin-bottom: 15px;
+}
+.preview-img{
+  max-width: 180px !important;
+}
+.details-img {
+  max-width: 100%;
+}
+.bold{
+  font-weight: bold;
+}
