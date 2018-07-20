@@ -42,7 +42,7 @@ Data is fetched upon the root component mounting, which in this case is the App 
 
 ## Improvements
 
-If I had more time to play around with this, I would first figure out what the most user friendly way is to display the data, because I know clicking on each individual article to check is tedious.  Perhaps displaying the article details as a modal or displaying more information on the Preview component.  Second I would have cleaned up CSS to make the app look like a functioning website and played around with CRUD operations like: adding/deleting an article, voting, favoriting, etc.
+If I had more time to play around with this, I would first figure out what the most user friendly way is to display the data, because I know clicking on each individual article to check is tedious.  Perhaps displaying the article details as a modal or displaying more information on the Preview component.  Second I would have cleaned up CSS to make the app look like a functioning website and played around with CRUD operations like: adding/deleting an article, voting, favoriting, etc.  Lastly I would implement an error message if the API failed to respond, and an Error component for a missing route.
 
 ## Setup
 

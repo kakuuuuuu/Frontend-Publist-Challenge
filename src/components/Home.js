@@ -18,6 +18,7 @@ class Home extends Component {
           <Col mdOffset={1}>
             <h2>Articles</h2>
           </Col>
+          {/* Creates Preview component for each article object in data */}
           {data && data.length > 0 && (
             data.map(article => (
               <Preview article={article} key={article.id}/>

@@ -26,8 +26,10 @@ class Details extends Component {
           </Row>
           <Row>
             <Col xs={12}>
+            {/* Only renders image if url is provided */}
             {article.image_url !== null && (
               <a href={article.url}>
+                {/* Changes url to backup image if article image is broken */}
                 <img src={article.image_url} alt='article' className='details-img' onError={(e)=>{e.target.src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/600px-No_image_available.svg.png"}}/>
               </a>
             )}
@@ -36,6 +38,7 @@ class Details extends Component {
           <Row>
             <Col xs={12}>
               <p>Description: {article.description} </p>
+              {/* Only renders author(s) if they are provided */}
               {article.authors && article.authors.length> 0
                 ? (<p className='bold'>By: {article.authors.map(name => (<span>{name} <br /></span>))}
                   </p>)

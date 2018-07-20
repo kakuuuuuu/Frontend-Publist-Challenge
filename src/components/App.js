@@ -11,10 +11,12 @@ import '../App.css'
 
 class App extends Component {
 
+  // Fetches article data upon app mounting
   componentDidMount() {
     this.fetch()
   }
 
+  // Dispatches getData action
   fetch = () => {
     const data = {
       "query": "tech"
@@ -26,6 +28,7 @@ class App extends Component {
     return (
       <div>
         <Switch>
+          {/* React Router Setup */}
           <Route exact path="/" render={() => (
             <Home />
           )} />

@@ -18,7 +18,9 @@ class Preview extends Component {
         </Row>
         <Row>
           <Col xs={12} sm={7} md={7}>
+          {/* Only renders image if url exists */}
           {article.image_url !== null && (
+            // Changes url to backup image if article image is broken
             <img src={article.image_url} alt='article' className='preview-img' onError={(e)=>{e.target.src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/600px-No_image_available.svg.png"}}/>
           )}
           </Col>
