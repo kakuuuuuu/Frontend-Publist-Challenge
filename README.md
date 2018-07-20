@@ -66,6 +66,10 @@ They will not be included in the production build so you can use them for things
 
 In the project directory, you can run:
 
+### `npm install`
+
+Installs all dependencies for the project.
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
